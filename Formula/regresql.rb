@@ -5,6 +5,8 @@ class Regresql < Formula
   sha256 "7727806f28d96700ad2653f168d133adeec02e48c41de7dc23a005ad4593da39"
   license "BSD-2-Clause"
 
+  deprecate! date: "2026-02-17", because: "has moved to the boringsql/boringsql tap. Run: brew untap boringsql/regresql && brew tap boringsql/boringsql"
+
   depends_on "go" => :build
 
   def install
